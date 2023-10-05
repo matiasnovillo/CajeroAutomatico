@@ -1,0 +1,41 @@
+﻿@page
+@model PINModel
+@{
+}
+<div class="page-header">
+    <div class="container">
+    <div class="row align-items-center">
+        <div class="col-12">
+            <h1 class="display-3">Bienvenido</h1>
+            <p class="lead pb-4">Ahora ingrese su PIN de 4 dígitos</p>   
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-2">
+                        <input type="text" id="pin" class="form-control" pattern="[0-9]{4}" readonly placeholder="****" required>
+                    </div>
+                    <div class="col-10">&nbsp;</div>
+                </div>
+                <button type="button" class="btn btn-dark mt-4" id="1">1</button>
+                <button type="button" class="btn btn-dark mt-4" id="2">2</button>
+                <button type="button" class="btn btn-dark mt-4" id="3">3</button>
+                <br/>
+                <button type="button" class="btn btn-dark mt-2" id="4">4</button>
+                <button type="button" class="btn btn-dark mt-2" id="5">5</button>
+                <button type="button" class="btn btn-dark mt-2" id="6">6</button>
+                <br/>
+                <button type="button" class="btn btn-dark mt-2" id="7">7</button>
+                <button type="button" class="btn btn-dark mt-2" id="8">8</button>
+                <button type="button" class="btn btn-dark mt-2" id="9">9</button>
+                <br/>
+                <button type="button" class="btn btn-dark mt-2" id="0">0</button>
+                <br/>
+                <button type="submit" class="btn btn-primary mt-2">Aceptar</button>
+                <button type="button" class="btn btn-secondary mt-2" id="limpiarteclado">Limpiar</button>
+                <a href="/" class="btn btn-secondary mt-2">Salir</a>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="/js/BasicCore/jquery-3.6.1.min.js"></script>
+<script src="/js/CajeroAutomatico/PIN.js"></script>

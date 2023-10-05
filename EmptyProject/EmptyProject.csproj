@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Remove="wwwroot\ts\Examples\Example\jQuery\ExampleNonQuery_jQuery.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.9.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\CajeroAutomatico\DTOs\" />
+    <Folder Include="BDBackup\" />
+    <Folder Include="BDSqueme\" />
+    <Folder Include="JSONScripts\" />
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+</Project>

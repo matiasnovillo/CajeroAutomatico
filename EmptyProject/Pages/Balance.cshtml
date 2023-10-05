@@ -1,0 +1,18 @@
+﻿@page
+@model BalanceModel
+@{
+}
+<div class="page-header">
+    <div class="container">
+    <div class="row align-items-center">
+        <div class="col-12">
+            <h1 class="display-3">Balance</h1>
+            <p>Número de tarjeta: @ViewData["Tarjeta"]</p>
+            <p>Fecha de vencimiento: @ViewData["FechaDeVencimiento"]</p>
+            <p>Cantidad de dinero en la cuenta: @ViewData["CantidadDeDinero"]</p>
+            <a href="/Operaciones" class="btn btn-primary">Atrás</a>
+            <a href="/" class="btn btn-secondary">Salir</a>
+        </div>
+    </div>
+    </div>
+</div>

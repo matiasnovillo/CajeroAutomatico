@@ -1,0 +1,5 @@
+/.vs
+/EmptyProject/obj
+/EmptyProject/bin
+/EmptyProject/node_modules
+/EmptyProject/wwwroot/assets/vendor/@fortawesome/fontawesome-free/sprites
